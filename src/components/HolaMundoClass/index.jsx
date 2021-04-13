@@ -10,7 +10,17 @@ class HolaMundoClass extends Component {
     }
     
     componentDidMount() {
-        console.log('Se monta el componente')
+        console.log('Se monta el componente');
+        setTimeout(
+            () => {
+            this.setState(
+                    {
+                        texto: 'Se actualizo el componente'
+                    }
+                )
+            },
+            3000
+        )
     }
 
     render() {
